@@ -1,6 +1,8 @@
 # Multi-turn Classroom Dialogue Dataset (MCD)
 
-We publish the Multi-turn Classroom Dialogue Dataset (MCD) for assessing student performance from One-on-one conversations. The dataset contains the raw teacher's and student's conversations in each example question. And also contain the data after preprocessing, which can be straight used to train models.
+We publish the Multi-turn Classroom Dialogue Dataset (MCD) and codes for assessing student performance from One-on-one conversations. The dataset contains the raw teacher's and student's conversations in each example question. And also contain the data after preprocessing, which can be straight used to train models.
+
+## Dataset Details
 
 The datasets can download from [this url](https://drive.google.com/file/d/1dUHYLKoE09Y8D5I0v4x77m9zIJECaRhI/view?usp=share_link), after downloading the data put the data in `data` folder. The folder structure is following:
 
@@ -12,7 +14,9 @@ The datasets can download from [this url](https://drive.google.com/file/d/1dUHYL
 
 We descripte each folder are follows.
 
-## dataset
+
+
+### dataset
 This folder is our raw data.
 - `item_dict.json` : the raw conversation data 
 	- key : id
@@ -44,7 +48,7 @@ def load_data(data_dir,fname="df_feature_num_label-3.csv"):
     return df_train, df_dev, df_test
 ```
 
-## features
+### features
 This folder contains the preprocessed data.
 
 `wide_features`: the vectors for wide model
@@ -77,5 +81,10 @@ def load_save_vectors(data_dir,remove_x=False):
     return x_train, y_train, x_dev, y_dev, x_test, y_test
 ```
 
-## word2vec
+### word2vec
 - `word2vec.pkl` : the word2vec file. 
+
+
+## Codes 
+
+Coming soon~
