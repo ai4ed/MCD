@@ -1,0 +1,18 @@
+numpy >= 1.19.5
+scikit-learn == 0.21.1
+pandas >= 1.1.5
+gensim >= 3.7.3
+matplotlib >= 3.3.3
+torch == 1.9.0
+transformers == 4.8.2
+keras == 2.0.8
+nltk
+pandas
+autopep8
+ipykernel
+sentencepiece
+imbalanced-learn
+jedi==0.17
+tensorflow==1.14.0
+BeautifulSoup4
+wandb

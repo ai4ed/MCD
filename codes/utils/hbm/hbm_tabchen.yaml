@@ -1,0 +1,21 @@
+program: hbm_tabchen.py
+method: grid
+name: HBM_multi_emb
+metric:
+  goal: minimize
+  name: dev_rmse
+parameters:
+  batch_size:
+    value: 64
+  lr:
+    values: [2e-05,2.5e-05]
+  epochs:
+    value: 100
+  seed:
+    values: [421]
+  num_hidden_layers:
+    values: [1,2,4,6]
+  num_attention_heads:
+    values: [1,2,3,4]
+  emb_name:
+    values: [roberta,edu_roberta,edu_roberta_cls,roberta_cls,word2vec,自研ASR]

@@ -1,0 +1,33 @@
+program: lstm.py
+name: lstm
+method: bayes
+metric:
+  goal: maximize
+  name: test_acc
+parameters:
+    lr:
+        values: [1e-03,1e-04,1e-05,1e-05,1.5e-05,2e-05]
+    lstm_output_dim:
+        values: [64,128,256]
+    emb_name:
+        values: [edu_roberta_cls]
+    use_attention:
+        values: [1]
+    use_bidirectional:
+        values: [1]
+    lstm_layer_num:
+        values: [1,2,3]
+    deep_dnn_num:
+        values: [1,2,3]
+    seed:
+        values: [421,2022]
+    area_attention:
+        values: [1] 
+    num_area_attention_heads:
+        values: [1]
+    area_key_mode:
+        values: ['mean']
+    area_value_mode:
+        values: ['sum']
+    max_area_width:
+        values: [1,2,3,4]

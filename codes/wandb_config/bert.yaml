@@ -1,0 +1,23 @@
+program: bert.py
+name: bert
+method: bayes
+metric:
+  goal: maximize
+  name: test_acc
+parameters:
+  lr:
+    values: [1e-03,1e-04,1e-05,1e-05,1.5e-05,2e-05]
+  seed:
+    values: [421,2022]
+  output_dense_num:
+    values: [1,2,3]
+  emb_name:
+    values: [edu_roberta_cls]
+  num_hidden_layers:
+    values: [1]
+  num_attention_heads:
+    values: [1,4,8]
+  batch_size:
+    values: [64]
+  area_attention:
+    values: [0]

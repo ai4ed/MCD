@@ -1,0 +1,17 @@
+program: han.py
+method: grid
+name: HAN
+metric:
+  goal: maximize
+  name: test_acc
+parameters:
+  mode:
+    values: [static]
+  lr:
+    values: [1e-03,1e-04,1e-05,1e-05,1.5e-05,2e-05]
+  seed:
+    values: [421,2022]
+  word_num_hidden:
+    values: [32,64]
+  emb_name:
+      values: [word2vec]

@@ -1,0 +1,25 @@
+torchrun --nnodes=1 --nproc_per_node=8 --master_port=21009 \
+    train_llama.py \
+    --model_name_or_path {model_name_or_path} \
+    --data_path {data_path} \
+    --bf16 True \
+    --output_dir {output_dir} \
+    --num_train_epochs 10 \
+    --per_device_train_batch_size 3 \
+    --per_device_eval_batch_size 3 \
+    --gradient_accumulation_steps 4 \
+    --evaluation_strategy "no" \
+    --save_strategy "steps" \
+    --save_steps 38 \
+    --save_total_limit 100 \
+    --learning_rate 2e-5 \
+    --weight_decay 0. \
+    --warmup_ratio 0.03 \
+    --lr_scheduler_type "cosine" \
+    --logging_steps 1 \
+    --fsdp "full_shard auto_wrap" \
+    --fsdp_transformer_layer_cls_to_wrap 'LlamaDecoderLayer' \
+    --tf32 True \
+    --model_max_length 4096 \
+    --gradient_checkpointing True \
+    --lazy_preprocess True 
