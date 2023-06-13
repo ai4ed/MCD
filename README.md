@@ -21,7 +21,7 @@ We descripte each folder are follows.
 
 This folder is our raw data.
 
-- `item_dict.json` : the raw conversation data
+- `item_dict_anonymized.json` : the raw conversation data
   - key : id
   - value: one conversation, see details in `item`
 - `item` : json list, each list is one sentence.
