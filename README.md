@@ -6,7 +6,7 @@ We publish the Multi-turn Classroom Dialogue Dataset (MCD) and codes for assessi
 
 ## Dataset Details
 
-The datasets can download from [this url](https://drive.google.com/file/d/1dUHYLKoE09Y8D5I0v4x77m9zIJECaRhI/view?usp=share_link), after downloading the data put the data in `data` folder. The folder structure is following:
+The datasets can download from [this url](https://drive.google.com/drive/folders/1o4FqtRsmWMq80adqC9eFu6A0cfpXTIac?usp=sharing), after downloading the data put the data in `data` folder. The folder structure is following:
 
 `data`
 
