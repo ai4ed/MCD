@@ -5,10 +5,16 @@ We publish the Multi-turn Classroom Dialogue Dataset (MCD) and codes for assessi
 ![](imgs/pipeline.jpg)
 
 ## Dataset Details
+
+The **MCD dataset** is built from **one-on-one grade-8 math class videos** collected from a **K-12 online learning platform**. Using a self-developed platform, we logged **slide timestamps** to split hour-long recordings into **slide-specific video segments**. Detailed slide object information was also available. We focused on slides with **sample questions**, discarding concept explanation slides, resulting in **5,226 unique video segments**. Each segment includes **separate audio tracks** from the student and teacher, with speech extracted via **ASR**. 
+
 ### Dataset Statistics
-The following figure shows the statistics of the training, development, and test sets. (A: apprentice, U: understanding, M: mastery)
+
+The figure below shows the distribution of the **training, development, and test sets**, categorized by **Apprentice (A)**, **Understanding (U)**, and **Mastery (M)**.
 
 ![Dataset Statistics](https://github.com/user-attachments/assets/51221314-3858-401a-9d13-6b141e6ca6f7)
+
+
 
 ### Download and Structure
 The dataset is available for download from [Google Drive](https://drive.google.com/drive/folders/1o4FqtRsmWMq80adqC9eFu6A0cfpXTIac?usp=sharing). After downloading, place the data in the `data` folder with the following structure:
