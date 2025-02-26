@@ -5,20 +5,24 @@ We publish the Multi-turn Classroom Dialogue Dataset (MCD) and codes for assessi
 ![](imgs/pipeline.jpg)
 
 ## Dataset Details
+### Dataset Statistics
+The following figure shows the statistics of the training, development, and test sets. (A: apprentice, U: understanding, M: mastery)
 
-The datasets can download from [this url](https://drive.google.com/drive/folders/1o4FqtRsmWMq80adqC9eFu6A0cfpXTIac?usp=sharing), after downloading the data put the data in `data` folder. The folder structure is following:
+![Dataset Statistics](https://github.com/user-attachments/assets/51221314-3858-401a-9d13-6b141e6ca6f7)
 
-`data`
+### Download and Structure
+The dataset is available for download from [Google Drive](https://drive.google.com/drive/folders/1o4FqtRsmWMq80adqC9eFu6A0cfpXTIac?usp=sharing). After downloading, place the data in the `data` folder with the following structure:
 
-- `dataset`
-- `features`
-- `word2vec`
-- `README.md`
+```
+data/
+├── dataset/
+├── features/
+├── word2vec/
+└── README.md
+```
 
-We descripte each folder are follows.
-
-### dataset
-
+### Dataset Contents
+#### 1. dataset/
 This folder is our raw data.
 
 - `item_dict_anonymized.json` : the raw conversation data
@@ -51,7 +55,10 @@ def load_data(data_dir,fname="df_feature_num_label-3.csv"):
     return df_train, df_dev, df_test
 ```
 
-### features
+
+
+
+#### 2. features/
 
 This folder contains the preprocessed data.
 
@@ -86,7 +93,7 @@ def load_save_vectors(data_dir,remove_x=False):
     return x_train, y_train, x_dev, y_dev, x_test, y_test
 ```
 
-### word2vec
+#### 3. word2vec/
 
 - `word2vec.pkl` : the word2vec file.
 
